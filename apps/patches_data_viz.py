@@ -64,7 +64,7 @@ The notebook conducts several grouped aggregations to understand the structure a
 
 @app.cell
 def _(mo, pl):
-    inv_df = pl.read_csv(str(mo.notebook_location() / ".." / "results" / "smartbugs" / "data_analysis" / "patches_w_require.csv"))
+    inv_df = pl.read_csv(str(mo.notebook_location() / "public" / "patches_w_require.csv"),infer_schema_length=10000)
     return inv_df
 
 @app.cell
