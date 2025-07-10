@@ -13,30 +13,6 @@ def _():
     return mo, pd, pl, os, plt
 
 
-@app.cell
-def _(mo):
-    return mo.md("""
-### 🔧 Patch Data Analysis Summary
-
-This notebook performs analysis on automatically generated patches.
-
-**Main Columns:**
-- `Tool`
-- `Category`
-- `Patch`
-- `GitHub Link`
-- `ChangeType`
-- `CodeLine`
-- `RequireType`
-
-**Main Goals:**
-1. Count patches by change type
-2. Count patches by tool
-3. Show distribution across categories
-4. Analyze how `require` is used across bug types
-""")
-
-
 
 @app.cell
 def _(mo, pl):
